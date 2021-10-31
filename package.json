@@ -1,0 +1,29 @@
+{
+  "name": "invocr",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "volta": {
+    "node": "17.0.1",
+    "yarn": "1.22.17"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4",
+    "webpack": "^5.61.0"
+  },
+  "devDependencies": {
+    "@webpack-cli/generators": "^2.4.1",
+    "ts-loader": "^9.2.6",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  },
+  "scripts": {
+    "webpack:server": "webpack server",
+    "webpack:dev": "webpack"
+  }
+}
