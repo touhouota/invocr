@@ -1,6 +1,7 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
 
 const path = require("path");
+const GasWebpackPlugin = require("gas-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -17,6 +18,7 @@ const config = {
   plugins: [
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
+    new GasWebpackPlugin()
   ],
   module: {
     rules: [

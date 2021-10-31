@@ -8,10 +8,12 @@
     "yarn": "1.22.17"
   },
   "dependencies": {
+    "@types/google-apps-script": "^1.0.38",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
     "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.3.0",
+    "gas-webpack-plugin": "^2.1.0",
     "prettier": "^2.4.1",
     "typescript": "^4.4.4",
     "webpack": "^5.61.0"
@@ -23,7 +25,9 @@
     "webpack-dev-server": "^4.4.0"
   },
   "scripts": {
-    "webpack:server": "webpack server",
-    "webpack:dev": "webpack"
+    "webpack:watch": "webpack watch",
+    "webpack": "webpack",
+    "webpack:push": "webpack && clasp push",
+    "clasp:push": "clasp push"
   }
 }
